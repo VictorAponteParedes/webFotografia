@@ -1,16 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CM Fotografía</title>
+    <link rel="stylesheet" href="styles/index.css" />
 </head>
 
 <body>
+    <header class="navbar">
+        <div class="logo">CM FOTOGRAFÍA</div>
+        <nav class="nav-links">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre mí</a>
+            <a href="#galeria">Galería</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#">Blog</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
 
-    <h3>Mi primer proyecto</h3>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Carlos Mendoza</h1>
+            <p>Capturando momentos, creando recuerdos eternos</p>
+        </div>
+        <div class="scroll-indicator">&#8964;</div>
+    </section>
 
+    <!-- Galería -->
+    <section id="galeria" class="galeria-section">
+        <h2 class="section-title">Galería</h2>
+        <div class="galeria-grid">
+            <img src="https://source.unsplash.com/random/400x300?sig=1" alt="Foto 1" class="galeria-img" />
+            <img src="https://source.unsplash.com/random/400x300?sig=2" alt="Foto 2" class="galeria-img" />
+            <img src="https://source.unsplash.com/random/400x300?sig=3" alt="Foto 3" class="galeria-img" />
+            <img src="https://source.unsplash.com/random/400x300?sig=4" alt="Foto 4" class="galeria-img" />
+        </div>
+
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="servicios-section">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="servicios-grid">
+            <div class="servicio-card">
+                <h3>Sesiones de Estudio</h3>
+                <p>Capturamos tu esencia en un entorno profesional y cómodo.</p>
+            </div>
+            <div class="servicio-card">
+                <h3>Fotografía de Eventos</h3>
+                <p>Inmortaliza tus momentos especiales con calidad y detalle.</p>
+            </div>
+            <div class="servicio-card">
+                <h3>Sesiones al Aire Libre</h3>
+                <p>Sesiones naturales con luz y paisajes impresionantes.</p>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
