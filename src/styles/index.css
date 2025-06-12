@@ -89,6 +89,7 @@ html {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .galeria-section,
@@ -110,18 +111,78 @@ html {
     object-fit: cover;
 }
 
+.servicios-section {
+    padding: 4rem 2rem;
+    background-color: #eaeaea;
+}
 .servicios-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 2rem;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .servicio-card {
+    background-color: #ffffff;
+        border-left: 5px solid #333;
+        border-radius: 12px;
+        padding: 2rem;
+        width: 280px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+        text-align: left;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .servicio-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    }
+    
+    .servicio-card h3 {
+        font-size: 1.3rem;
+        color: #111;
+        margin-bottom: 0.8rem;
+    }
+    
+    .servicio-card p {
+        font-size: 0.95rem;
+        color: #444;
+        line-height: 1.5;
+    }
+    
+    /* Inspiracion */
+    
+    .inspiracion-section {
+        padding: 4rem 2rem;
     background-color: #fff;
+}
+
+.inspiracion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.inspiracion-card {
+    background-color: #f0f0f0;
     border-radius: 8px;
-    padding: 1.5rem;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     text-align: center;
+    padding-bottom: 1rem;
+    }
+    
+    .inspiracion-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .inspiracion-card p {
+        margin-top: 1rem;
+        padding: 0 1rem;
+        color: #333;
+        font-size: 0.95rem;
 }
