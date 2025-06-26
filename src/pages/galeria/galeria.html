@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Efrain Gonzalez - Galería de Fotos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./galeria.css" />
+</head>
+<body>
+  <header>
+    <h1>Efrain Gonzalez</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="galeria.html" class="active">Galería de Fotos</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="acerca.html">Acerca de mí</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Bodas</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/300x200?text=Boda+1" alt="Boda 1" />
+        <img src="https://via.placeholder.com/300x200?text=Boda+2" alt="Boda 2" />
+        <img src="https://via.placeholder.com/300x200?text=Boda+3" alt="Boda 3" />
+      </div>
+    </section>
+
+    <section>
+      <h2>15 Años</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/300x200?text=15+años+1" alt="15 Años 1" />
+        <img src="https://via.placeholder.com/300x200?text=15+años+2" alt="15 Años 2" />
+        <img src="https://via.placeholder.com/300x200?text=15+años+3" alt="15 Años 3" />
+      </div>
+    </section>
+
+    <section>
+      <h2>Corporativos</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/300x200?text=Corporativo+1" alt="Corporativo 1" />
+        <img src="https://via.placeholder.com/300x200?text=Corporativo+2" alt="Corporativo 2" />
+        <img src="https://via.placeholder.com/300x200?text=Corporativo+3" alt="Corporativo 3" />
+      </div>
+    </section>
+
+    <section>
+      <h2>Eventos y Videos Sociales</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/300x200?text=Evento+1" alt="Evento 1" />
+        <img src="https://via.placeholder.com/300x200?text=Evento+2" alt="Evento 2" />
+        <img src="https://via.placeholder.com/300x200?text=Evento+3" alt="Evento 3" />
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Ampliado" />
+  </div>
+
+  <script>
+    const images = document.querySelectorAll('.gallery img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = 'flex';
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
