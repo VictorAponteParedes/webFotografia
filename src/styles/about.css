@@ -1,0 +1,144 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Georgia', serif;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+}
+
+.nav-links a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+
+.about-detail {
+    padding-top: 60px;
+    /* evitar que el header tape el contenido */
+    background-color: #fff;
+    color: #333;
+    font-family: 'Georgia', serif;
+}
+
+.about-hero {
+    background-color: #eaeaea;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-hero p {
+    font-style: italic;
+    color: #666;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.about-paragraph {
+    margin-bottom: 2.5rem;
+}
+
+.about-paragraph h2 {
+    font-size: 1.5rem;
+    color: #111;
+    margin-bottom: 1rem;
+}
+
+.about-paragraph p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+
+
+.footer {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 3rem 2rem 1rem;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #111;
+}
+
+.footer-info,
+.footer-links,
+.footer-social {
+    flex: 1 1 250px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+    color: #666;
+}
